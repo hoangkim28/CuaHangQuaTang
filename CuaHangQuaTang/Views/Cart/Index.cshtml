@@ -1,0 +1,169 @@
+﻿
+@{
+    ViewBag.Title = "Giỏ hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="contact" class="contact-area pt-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-10 mx-auto">
+                <div class="section-title text-center">
+                    <h2 class="mb-60 wow fadeInUp" data-wow-delay=".2s">Giỏ hàng</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 mx-auto">
+                <table class="table table-bordered table-responsive-xl" style="border-color:#de5088">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center" style="width:50px;">#</th>
+                            <th>Hình ảnh</th>
+                            <th scope="col">Tên sản phẩm</th>
+                            <th scope="col" style="width:130px;">Số lượng</th>
+                            <th scope="col" style="width:150px;">Đơn giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row" class="text-center">1</td>
+                            <td><img src="~/assets/images/Cach-chon-dua-hau-ngon-3-1024x680.jpg" style="max-width:50px;" alt="Alternate Text" /></td>
+                            <td>Sản phẩm 01</td>
+                            <td class="text-center">x1</td>
+                            <td class="text-right">100,000đ</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="text-center">2</td>
+                            <td><img src="~/assets/images/Cach-chon-dua-hau-ngon-3-1024x680.jpg" style="max-width:50px;" alt="Alternate Text" /></td>
+                            <td>Sản phẩm 02</td>
+                            <td class="text-center">x2</td>
+                            <td class="text-right">200,000đ</td>
+                        </tr>
+                        <tr>
+                            <td style="border:none; border-bottom:hidden"></td>
+                            <td style="border:none; border-bottom:hidden"></td>
+                            <td style="border:none; border-bottom:hidden"></td>
+                            <td class="text-center font-weight-bold">Tổng số lượng</td>
+                            <td class="text-center font-weight-bold">Tổng đơn hàng</td>
+                        </tr>
+                        <tr>
+                            <td style="border:none; border-bottom:hidden"></td>
+                            <td style="border:none; border-bottom:hidden"></td>
+                            <td style="border:none; border-bottom:hidden"></td>
+                            <td class="text-center">x3</td>
+                            <td class="text-right">300,000đ</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <hr class="mb-40"/>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+                <div class="contact-form-wrapper">
+                    <h3 class="mb-40 wow fadeInUp" data-wow-delay=".3s">Thông tin nhận hàng</h3>
+                    <form action="assets/contact.php" method="post" class="mb-40 contact-form wow fadeInUp"
+                          data-wow-delay=".4s">
+                        <input type="text" placeholder="Họ và tên" name="name" id="name" required>
+                        <input type="email" placeholder="Email" name="email" id="email" required>
+                        <input type="number" maxlength="11" minlength="9" placeholder="Điện thoại" name="phone" id="phone" required>
+                        <textarea name="address" id="address" rows="2" placeholder="Địa chỉ" required></textarea>
+                        <textarea name="message" id="message" rows="4" placeholder="Ghi chú thêm"></textarea>
+                        <button class="btn-hover btn-block main-btn" type="submit">Đặt hàng</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="faq-wrapper">
+                    <h3 class="mb-40 wow fadeInUp" data-wow-delay=".2s">Với "Tên web" Chúng tôi luôn cam kết</h3>
+                    <div class="faq-accordion accordion-style">
+                        <div class="accordion" id="accordionExample2">
+                            <div class="single-accordion mb-30 wow fadeInUp" data-wow-delay=".3s">
+                                <div class="accordion-btn">
+                                    <button class="btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                        <span>Cam kết 1</span>
+                                    </button>
+                                </div>
+
+                                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample2">
+                                    <div class="accordion-content">
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                        sapiente ea
+                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                        farm-to-table, raw
+                                        denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                        sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-accordion mb-30 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="accordion-btn">
+                                    <button class="btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                        <span>Cam kết 2</span>
+                                    </button>
+                                </div>
+
+                                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample2">
+                                    <div class="accordion-content">
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                        sapiente ea
+                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                        farm-to-table, raw
+                                        denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                        sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-accordion mb-30 wow fadeInUp" data-wow-delay=".5s">
+                                <div class="accordion-btn">
+                                    <button class="btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                        <span>Cam kết 3</span>
+                                    </button>
+                                </div>
+
+                                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample2">
+                                    <div class="accordion-content">
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                        sapiente ea
+                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                        farm-to-table, raw
+                                        denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                        sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-accordion mb-30 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="accordion-btn">
+                                    <button class="btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                        <span>Cam kết 4?</span>
+                                    </button>
+                                </div>
+
+                                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample2">
+                                    <div class="accordion-content">
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                        sapiente ea
+                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                        farm-to-table, raw
+                                        denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                        sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+</section>

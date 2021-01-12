@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="contact-area pt-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4"></div>
+            <div class="col-xl-4 col-lg-4">
+                <div class="contact-form-wrapper">
+                    <h3 class="mb-40 wow fadeInUp" data-wow-delay=".3s">Đăng nhập</h3>
+                    <form action="/login.html" method="post" class="contact-form wow fadeInUp"
+                          data-wow-delay=".4s">
+                        <input type="email" placeholder="Email" name="email" id="email" required>
+                        <input type="password" placeholder="Mật khẩu" name="password" id="password" required>
+                        <button class="btn-hover btn-block main-btn" type="submit">Đăng nhập</button>
+                    </form>
+                    <h5 class="mb-50 wow fadeInUp pt-20" data-wow-delay=".3s">Chưa có tài khoản <a href="/Account/Register"> đăng ký</a></h5>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4"></div>
+        </div>
+    </div>
+</section>
